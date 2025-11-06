@@ -1,8 +1,5 @@
 {
-  "name": "ionic-sound",
-  "app_id": "",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
+  "name": "sound-recorder",
+  "integrations": {},
+  "type": "angular-standalone"
 }

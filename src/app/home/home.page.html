@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Sound Recorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-content class="ion-text-center">
+      <ion-button
+        expand="block"
+        color="danger"
+        shape="round"
+        (click)="toggleRecording()"
+      >
+        <ion-icon
+          slot="start"
+          [name]="isRecording ? 'stop-circle' : 'mic-circle'"
+        ></ion-icon>
+
+        {{ isRecording ? 'Stop Recording' : 'Start Recording' }}
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list *ngIf="recordings.length > 0">
+    <ion-list-header>
+      <ion-label>Recordings</ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let rec of recordings; index as i">
+      <ion-label>{{ rec.fileName }}</ion-label>
+
+      <ion-button slot="end" fill="clear" color="primary" (click)="play(rec)">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,53 @@
+PODS:
+  - Capacitor (7.4.4):
+    - CapacitorCordova
+  - CapacitorCommunityMedia (8.0.1):
+    - Capacitor
+    - SDWebImage
+  - CapacitorCordova (7.4.4)
+  - CapacitorFilesystem (7.1.4):
+    - Capacitor
+    - IONFilesystemLib (~> 1.0.1)
+  - CapacitorVoiceRecorder (7.0.6):
+    - Capacitor
+  - IONFilesystemLib (1.0.1)
+  - SDWebImage (5.21.3):
+    - SDWebImage/Core (= 5.21.3)
+  - SDWebImage/Core (5.21.3)
+
+DEPENDENCIES:
+  - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorCommunityMedia (from `../../node_modules/@capacitor-community/media`)"
+  - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorFilesystem (from `../../node_modules/@capacitor/filesystem`)"
+  - CapacitorVoiceRecorder (from `../../node_modules/capacitor-voice-recorder`)
+
+SPEC REPOS:
+  trunk:
+    - IONFilesystemLib
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorCommunityMedia:
+    :path: "../../node_modules/@capacitor-community/media"
+  CapacitorCordova:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorFilesystem:
+    :path: "../../node_modules/@capacitor/filesystem"
+  CapacitorVoiceRecorder:
+    :path: "../../node_modules/capacitor-voice-recorder"
+
+SPEC CHECKSUMS:
+  Capacitor: 358dd1c3fdd71d969547b17e159fd8a7736cb45f
+  CapacitorCommunityMedia: d1538b56a3303298e7cf45a18b11e624fbcbdc8e
+  CapacitorCordova: bf648a636f3c153f652d312ae145fb508b6ffced
+  CapacitorFilesystem: f9bd850c41e048180e5dc0cbb90f2033ede9d2cc
+  CapacitorVoiceRecorder: 9158861be982f32d411769723a4d813d6ce46135
+  IONFilesystemLib: 89258b8e3e85465da93127d25d7ce37f977e8a6f
+  SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
+
+PODFILE CHECKSUM: cce7ef9848ac57828d7d9ddf07b3d87df0a278ef
+
+COCOAPODS: 1.16.2
